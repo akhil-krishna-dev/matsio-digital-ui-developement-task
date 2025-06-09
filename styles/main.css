@@ -1,5 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+/* Animations starts */
+@keyframes header-nav-anim {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+@keyframes bottom-to-top-entry {
+	0% {
+		opacity: 0;
+		transform: translateY(150px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+/* Animations ends */
+/*  */
+/*  */
+
 * {
 	box-sizing: border-box;
 	padding: 0px;
@@ -68,14 +92,6 @@ header .header-bottom .right-section span::after {
 header .header-bottom .right-section span:hover::after {
 	background-color: var(--light-cyan);
 	animation: header-nav-anim 0.3s ease;
-}
-@keyframes header-nav-anim {
-	0% {
-		width: 0%;
-	}
-	100% {
-		width: 100%;
-	}
 }
 
 /* main section starts */
